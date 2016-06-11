@@ -1,0 +1,108 @@
+
+$bgcolour: #fff;
+$textInput: #b2b2b2;
+
+body {
+  font-family: sans-serif;
+  background: $bgcolour;
+}
+.wbop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.messenger__cont {
+    max-width: 320px;
+    display: flex;
+}
+.clippy {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.message__wrapper {
+    flex: 1;
+    background-color: "#fff";
+    border: 1px solid #ccc;
+}
+.avatar {
+    border-radius: 15px;
+    background-color: #bbccdd;
+    text-align: center;
+    padding: 7px;
+    width: 15px;
+    font-size: 11px;
+    color: #fff;
+    align-self: flex-start;
+    margin-right: 10px;
+}
+
+// Bubble
+.bubble__wrap {
+    display: flex;
+    flex-direction: row;
+}
+.bubble {
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14px;
+
+}
+.bubble--left {
+    margin-right: 70px;
+    background-color: #e6e6eb;
+    align-self: flex-end;
+    margin-left: 0; 
+
+}
+.bubble--right {
+    background-color: #007aff;
+    color: #fff;
+    align-self: flex-end;
+	margin-left: auto;
+}
+.messages__cont {
+    margin: 10px;
+}
+.messages__timeStamp {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+// TextInput
+.textInput__cont {
+    height: 44px;
+    border-top: 1px solid $textInput;
+    flex-direction: row;
+    display: flex;
+}
+.textInput__input {
+    border: none;
+    color: $textInput;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 16px;
+    &:focus {
+        outline: none;
+    }
+}
+.textInput__btn {
+    font-size: 16px;    
+    color: $textInput;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    
+}
+.textInput__audio {
+border: none;
+    width: 40px;
+    height: 40px;
+    fill: $textInput;
+}

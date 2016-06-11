@@ -1,0 +1,34 @@
+{
+  "name": "react-webpack-blueprint",
+  "version": "0.1.0",
+  "description": "Blueprint for building React web applications with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port=8080 --hot --inline --watch",
+    "dist": "webpack -p"
+  },
+  "author": "Waldek Mastykarz | Office Development MVP | Rencore",
+  "license": "ISC",
+  "dependencies": {
+    "oxford-speech": "^1.0.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "tslint": "^3.6.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

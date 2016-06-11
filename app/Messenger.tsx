@@ -6,7 +6,10 @@ import Bubble from "./Bubble";
 
 interface MessengerState {
     inputText: string;
+    messagesArray: Array<any>;
 }
+
+let speechKey = "4ea4b0b8bc5447b8bc31e8241ea70b2e";
 
 export default class Messenger extends React.Component<any, any> {
     constructor(props) {
@@ -28,8 +31,8 @@ export default class Messenger extends React.Component<any, any> {
         client = Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionServiceFactory.createMicrophoneClient(
                     Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionMode.longDictation,
                     "en-us",
-                    "4ea4b0b8bc5447b8bc31e8241ea70b2e",
-                    "4ea4b0b8bc5447b8bc31e8241ea70b2e");
+                    speechKey,
+                    speechKey);
 
         client.startMicAndRecognition();
             setTimeout(function () {

@@ -11,7 +11,6 @@
   "author": "Waldek Mastykarz | Office Development MVP | Rencore",
   "license": "ISC",
   "dependencies": {
-    "oxford-speech": "^1.0.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
